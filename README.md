@@ -72,6 +72,12 @@ docker build -t fastapi-gemini .
 docker run -p 8000:8000 fastapi-gemini
 ```
 
+7. Or with Docker-compose:
+
+```bash
+docker-compose run --build
+```
+
 ## Next Steps / Potential Improvements
 
 - Add full authentication flow (login, register) to track user usage
