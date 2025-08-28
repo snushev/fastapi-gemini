@@ -28,14 +28,20 @@ Dockerfile # Docker configuration
 
 ## Setup
 
-1. Clone this repository:
+1. Get your Gemini API key:
+
+```bash
+https://aistudio.google.com
+```
+
+2. Clone this repository:
 
 ```bash
 git clone https://github.com/snushev/fastapi-gemini
 cd fastapi-gemini
 ```
 
-2. Create a `.env` file with the following keys:
+3. Create a `.env` file with the following keys:
 
 ```ini
 GEMINI_API_KEY=your_gemini_api_key
@@ -47,19 +53,19 @@ AUTH_RATE_LIMIT=20
 AUTH_TIME_WINDOW_SECONDS=60
 ```
 
-3. Install dependencies:
+4. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run locally:
+5. Run locally:
 
 ```bash
 uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-5. Or run with Docker:
+6. Or run with Docker:
 
 ```bash
 docker build -t fastapi-gemini .
